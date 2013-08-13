@@ -11,14 +11,17 @@ Class
 
 How to use
 by Builder
-  1.Drag UILabel to View
-  2.Add your text and resize Label frame to whatever you want
-  3.add custom class to UIMarqueeLabel
-  4.if text lenght is more than frame it will automaticlly move from right to left
+
+    1.Drag UILabel to View
+    2.Add your text and resize Label frame to whatever you want
+    3.add custom class to UIMarqueeLabel
+    4.if text lenght is more than frame it will automaticlly move from right to left
+  
 by programmatically
-  1.Import UIMarqueeLabel.h
-  2.init Object UIMarqueeLabel with frame
-  3. set up your text style
+
+    1.Import UIMarqueeLabel.h
+    2.init Object UIMarqueeLabel with frame
+    3. set up your text style
     
 Property
   - (int)velocity : how fast of text animation (default 25)
