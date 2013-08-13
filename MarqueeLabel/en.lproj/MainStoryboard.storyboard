@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Atime View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="atime_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Normal Label is too creepy for very 1 line and long text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwv-Pl-K9T">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Nzw-XI-naO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Normal Label is too creepy for very 1 line and long text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyl-TX-vwe" customClass="UIMarqueeLabel">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zwv-Pl-K9T" firstAttribute="top" secondItem="3" secondAttribute="top" constant="46" id="6cN-PT-hav"/>
+                            <constraint firstItem="Lyl-TX-vwe" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Gw4-7e-VmX"/>
+                            <constraint firstItem="zwv-Pl-K9T" firstAttribute="trailing" secondItem="Lyl-TX-vwe" secondAttribute="trailing" type="default" id="l8B-qa-ldU"/>
+                            <constraint firstItem="Lyl-TX-vwe" firstAttribute="top" secondItem="3" secondAttribute="top" constant="85" id="vIw-x6-Ojq"/>
+                            <constraint firstItem="zwv-Pl-K9T" firstAttribute="leading" secondItem="Lyl-TX-vwe" secondAttribute="leading" type="default" id="xls-C8-wAc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIMarqueeLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIMarqueeLabel.h"/>
+        </class>
+        <class className="atime_ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/atime_ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
